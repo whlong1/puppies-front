@@ -1,7 +1,10 @@
+import { useState } from 'react'
+import Landing from './pages/Landing'
+
 const App = () => {
   return (
     <>
-      Puppies
+      <Landing/>
     </>
   )
 }
