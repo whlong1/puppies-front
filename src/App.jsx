@@ -5,7 +5,7 @@ import Landing from './pages/Landing'
 
 const App = () => {
   const [puppies, setPuppies] = useState([])
-  
+
   return (
     <>
       <Nav />

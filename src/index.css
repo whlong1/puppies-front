@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 5rem;
   font-weight: 700;
 }
 
@@ -36,6 +36,9 @@ main {
   justify-content: center;
 }
 
+img#logo {
+  width: 350px;
+}
 
 
 .circleBtn {
