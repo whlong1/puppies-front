@@ -4,7 +4,9 @@ const PuppyList = () => {
       <h1>PUPPY LIST</h1>
       <ul>
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((p) => (
-          <li key={p}>{p}</li>
+          <li key={p}>
+            {p}
+          </li>
         ))}
       </ul>
     </main>
