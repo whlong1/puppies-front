@@ -64,7 +64,8 @@ a {
   border-radius: 40px;
   text-decoration: none;
   border: 1px solid white;
-  padding: 8px 16px 10px 16px;
+  padding: 6px 16px 8px 16px;
+  background-color: rgba(0, 150, 255, 0.1);
 }
 
 nav a:first-child {
