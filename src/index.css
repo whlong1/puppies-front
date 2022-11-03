@@ -1,6 +1,6 @@
 *,
 *::before,
-*::after { 
+*::after {
   box-sizing: inherit;
 }
 
@@ -28,12 +28,6 @@ body {
 #root {
   width: 100%;
   height: 100%;
-}
-
-h1 {
-  font-size: 400%;
-  font-weight: 700;
-  text-align: center;
 }
 
 nav {
@@ -65,11 +59,12 @@ a {
   text-decoration: none;
   border: 1px solid white;
   padding: 6px 16px 8px 16px;
-  background-color: rgba(0, 150, 255, 0.1);
+  background: rgba(0, 150, 255, 0.1);
 }
 
 nav a:first-child {
   border: none;
+  background: none;
   padding: 8px 0px;
   margin-right: auto;
 }
@@ -82,7 +77,54 @@ img#logo {
   width: 350px;
 }
 
+h1 {
+  font-size: 420%;
+  font-weight: 700;
+  text-align: center;
+}
 
+.list {
+  display: flex;
+  color: white;
+  min-height: 100%;
+  margin-top: 60px;
+  justify-content: flex-start;
+}
+
+.list ul {
+  gap: 14px;
+  width: 100%;
+  display: grid;
+  padding: 0 16px;
+  list-style: none;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.list ul li {
+  margin: 5px;
+  height: 220px;
+  border: 1px solid white;
+}
+
+
+
+@media only screen and (min-width: 900px) {
+  .list ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .list ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .list ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 
 

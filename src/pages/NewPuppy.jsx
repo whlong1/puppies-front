@@ -1,6 +1,8 @@
 const NewPuppy = () => {
   return (
-    <main></main>
+    <main className="new">
+      <h1>PUPPY LIST</h1>
+    </main>
   )
 }
 

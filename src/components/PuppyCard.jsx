@@ -1,6 +1,6 @@
 const PuppyCard = () => {
   return (
-    <main></main>
+    <li></li>
   )
 }
 
