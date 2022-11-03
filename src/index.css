@@ -1,5 +1,7 @@
-* {
-  box-sizing: border-box;
+*,
+*::before,
+*::after { 
+  box-sizing: inherit;
 }
 
 html,
@@ -7,38 +9,80 @@ body {
   margin: 0;
   height: 100%;
   overflow: hidden;
-  background-color: #17C3F4;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-style: normal;
+  box-sizing: border-box;
+  background-color: #17C3F4;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-family: canada-type-gibson, sans-serif;
-}
-
-#root {
-  height: 100%;
 }
 
 body {
   overflow: auto;
 }
 
+:root {
+  font-size: 85%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
 h1 {
-  font-size: 5rem;
+  font-size: 400%;
   font-weight: 700;
+  text-align: center;
+}
+
+nav {
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  position: fixed;
+  padding: 8px 16px;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #17C3F4;
 }
 
 main {
-  height: 100%;
   display: flex;
   color: white;
+  min-height: 100%;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 
+a {
+  margin: 0 8px;
+  color: white;
+  font-weight: 500;
+  border-radius: 40px;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 8px 16px 10px 16px;
+}
+
+nav a:first-child {
+  border: none;
+  padding: 8px 0px;
+  margin-right: auto;
+}
+
+nav a:first-child img {
+  width: 50px;
+}
+
 img#logo {
   width: 350px;
 }
+
+
+
 
 
 .circleBtn {
