@@ -1,6 +1,4 @@
 import Logo from '../assets/logo.svg'
-
-
 const Landing = () => {
   return (
     <main>
