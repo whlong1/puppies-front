@@ -31,8 +31,8 @@ const PuppyCard = ({ puppy }) => {
     <li>
       <img src={obj[puppy.color][puppy.ears]} alt="A cute puppy" />
       <h2>{puppy.name}</h2>
-      <h3>{puppy.breed}</h3>
-      <p>{puppy.age}</p>
+      <p>Breed: {puppy.breed}</p>
+      <p>Age: {puppy.age}</p>
     </li>
   )
 }

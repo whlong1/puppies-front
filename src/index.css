@@ -77,7 +77,10 @@ img#logo {
   width: 350px;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
@@ -111,7 +114,13 @@ li {
   align-items: center;
   border-radius: 20px;
   flex-direction: column;
-  border: 1px solid white;
+
+  border: .5px solid rgba(255, 255, 255, 0.5);
+
+  border-radius: 35px;
+  background: #17C3F4;
+  box-shadow: 22px 22px 43px #15b0dc,
+    -22px -22px 43px #19d7ff;
 }
 
 li img {
