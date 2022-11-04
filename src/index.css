@@ -95,6 +95,11 @@ h1 {
   font-weight: 700;
   text-align: center;
   margin-bottom: 16px;
+
+  /* Exaggerated: */
+  font-size: 160px;
+  margin-bottom: 32px;
+  /* ---------------- */
 }
 
 .list {
