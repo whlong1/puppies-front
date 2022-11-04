@@ -8,21 +8,21 @@ import NewPuppy from './pages/NewPuppy'
 import PuppyList from './pages/PuppyList'
 
 const puppyArr = [
-  { color: 'black', ears: 'bat', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'black', ears: 'drop', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'black', ears: 'button', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'brown', ears: 'bat', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'brown', ears: 'drop', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'brown', ears: 'button', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'grey', ears: 'bat', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'grey', ears: 'drop', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'grey', ears: 'button', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'white', ears: 'bat', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'white', ears: 'drop', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'white', ears: 'button', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'golden', ears: 'bat', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'golden', ears: 'drop', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'golden', ears: 'button', name: 'Rover', breed: 'Lab', age: 5 },
+  { color: 'Black', ears: 'Bat', name: 'Rover', breed: 'Lab', age: 5 },
+  { color: 'Black', ears: 'Drop', name: 'Rover', breed: 'Lab', age: 5 },
+  { color: 'Black', ears: 'Button', name: 'Rover', breed: 'Lab', age: 5 },
+  { color: 'Brown', ears: 'Bat', name: 'Rover', breed: 'Lab', age: 5 },
+  { color: 'Brown', ears: 'Drop', name: 'Rover', breed: 'Lab', age: 5 },
+  { color: 'Brown', ears: 'Button', name: 'Rover', breed: 'Lab', age: 5 },
+  { color: 'Grey', ears: 'Bat', name: 'Rover', breed: 'Lab', age: 5 },
+  { color: 'Grey', ears: 'Drop', name: 'Rover', breed: 'Lab', age: 5 },
+  { color: 'Grey', ears: 'Button', name: 'Rover', breed: 'Lab', age: 5 },
+  { color: 'White', ears: 'Bat', name: 'Rover', breed: 'Lab', age: 5 },
+  { color: 'White', ears: 'Drop', name: 'Rover', breed: 'Lab', age: 5 },
+  { color: 'White', ears: 'Button', name: 'Rover', breed: 'Lab', age: 5 },
+  { color: 'Golden', ears: 'Bat', name: 'Rover', breed: 'Lab', age: 5 },
+  { color: 'Golden', ears: 'Drop', name: 'Rover', breed: 'Lab', age: 5 },
+  { color: 'Golden', ears: 'Button', name: 'Rover', breed: 'Lab', age: 5 },
 ]
 
 const App = () => {
