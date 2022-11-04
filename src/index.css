@@ -11,7 +11,10 @@ body {
   overflow: hidden;
   font-style: normal;
   box-sizing: border-box;
-  background-color: #17C3F4;
+
+
+  background-color: rgb(15, 195, 245);
+
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: canada-type-gibson, sans-serif;
@@ -39,7 +42,12 @@ nav {
   padding: 8px 16px;
   align-items: center;
   justify-content: flex-end;
-  background-color: #17C3F4;
+  background-color: rgb(15, 195, 245);
+  box-shadow: 0px 5px 10px -5px rgba(15, 195, 245, 0.85);
+  -moz-box-shadow: 0px 5px 10px -5px rgba(15, 195, 245, 0.85);
+  -webkit-box-shadow: 0px 5px 10px -5px rgba(15, 195, 245, 0.85);
+
+  /* border: 1px solid red; */
 }
 
 main {
@@ -50,7 +58,9 @@ main {
   flex-direction: column;
   justify-content: center;
 
-  /* background-color: #18CCFF; */
+  padding: 24px 16px;
+  background-color: #0ec3f6;
+
 }
 
 a {
@@ -84,12 +94,14 @@ h2,
 h3,
 p {
   margin: 0;
+  letter-spacing: .5px;
 }
 
 h1 {
-  font-size: 420%;
+  font-size: 450%;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .list {
@@ -102,9 +114,9 @@ h1 {
 
 ul {
   gap: 14px;
+  padding: 0;
   width: 100%;
   display: grid;
-  padding: 0 16px;
   list-style: none;
   grid-template-columns: repeat(1, 1fr);
 }
@@ -114,26 +126,25 @@ li {
   height: 250px;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 20px;
   flex-direction: column;
+  border: 1.5px solid rgba(255, 255, 255, .2);
 
-  border: 1.5px solid rgba(255, 255, 255);
+  cursor: pointer;
 
+  background: rgb(70, 215, 255, .75);
+  background: linear-gradient(0deg, rgba(70, 215, 255, .65) 0%, rgba(70, 215, 255, .85) 100%);
 
-  /* border: .5px solid rgba(255, 255, 255, 0.5); */
-
-  /* border-radius: 35px;
-  background: #17C3F4;
-  box-shadow: 22px 22px 43px #15b0dc,
-    -22px -22px 43px #19d7ff; */
+  /* neumorphic: */
+  box-shadow: 22px 22px 43px #15b0dc, -22px -22px 43px #19d7ff;
 }
 
 li img {
-  width: 160px;
+  width: 150px;
+  margin-bottom: 16px;
 }
 
-/* background */
-/* 17D0F9 */
 
 
 

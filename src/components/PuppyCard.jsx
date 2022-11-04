@@ -31,9 +31,8 @@ const PuppyCard = ({ puppy }) => {
   return (
     <li>
       <img src={avatar} alt="A cute puppy" />
-      <h2>{puppy.name}</h2>
-      <p>Breed: {puppy.breed}</p>
-      <p>Age: {puppy.age}</p>
+      <h2>{puppy.name.toUpperCase()}</h2>
+      <p>A {puppy.age} year old {puppy.breed}</p>
     </li>
   )
 }
