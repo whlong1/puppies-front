@@ -20,7 +20,6 @@ import GoldenButton from '../assets/icons/goldenButton.svg'
 
 const iconTable = {
   GreyBat,
-  GreyBat,
   GreyDrop,
   GreyButton,
   BlackBat,
