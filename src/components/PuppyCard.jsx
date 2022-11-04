@@ -18,7 +18,7 @@ import GoldenBat from '../assets/icons/goldenBat.svg'
 import GoldenDrop from '../assets/icons/goldenDrop.svg'
 import GoldenButton from '../assets/icons/goldenButton.svg'
 
-const obj = {
+const iconTable = {
   grey: { bat: GreyBat, drop: GreyDrop, button: GreyButton },
   black: { bat: BlackBat, drop: BlackDrop, button: BlackButton },
   white: { bat: WhiteBat, drop: WhiteDrop, button: WhiteButton },
@@ -27,9 +27,10 @@ const obj = {
 }
 
 const PuppyCard = ({ puppy }) => {
+  const avatar = iconTable[puppy.color][puppy.ears]
   return (
     <li>
-      <img src={obj[puppy.color][puppy.ears]} alt="A cute puppy" />
+      <img src={avatar} alt="A cute puppy" />
       <h2>{puppy.name}</h2>
       <p>Breed: {puppy.breed}</p>
       <p>Age: {puppy.age}</p>

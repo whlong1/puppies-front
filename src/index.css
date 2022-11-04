@@ -49,6 +49,8 @@ main {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
+  /* background-color: #18CCFF; */
 }
 
 a {
@@ -115,17 +117,23 @@ li {
   border-radius: 20px;
   flex-direction: column;
 
-  border: .5px solid rgba(255, 255, 255, 0.5);
+  border: 1.5px solid rgba(255, 255, 255);
 
-  border-radius: 35px;
+
+  /* border: .5px solid rgba(255, 255, 255, 0.5); */
+
+  /* border-radius: 35px;
   background: #17C3F4;
   box-shadow: 22px 22px 43px #15b0dc,
-    -22px -22px 43px #19d7ff;
+    -22px -22px 43px #19d7ff; */
 }
 
 li img {
   width: 160px;
 }
+
+/* background */
+/* 17D0F9 */
 
 
 
