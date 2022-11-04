@@ -77,6 +77,10 @@ img#logo {
   width: 350px;
 }
 
+h1, h2, h3, p {
+  margin: 0;
+}
+
 h1 {
   font-size: 420%;
   font-weight: 700;
@@ -91,7 +95,7 @@ h1 {
   justify-content: flex-start;
 }
 
-.list ul {
+ul {
   gap: 14px;
   width: 100%;
   display: grid;
@@ -100,11 +104,18 @@ h1 {
   grid-template-columns: repeat(1, 1fr);
 }
 
-.list ul li {
+li {
   margin: 5px;
   height: 250px;
-  border: 1px solid white;
+  display: flex;
+  align-items: center;
   border-radius: 20px;
+  flex-direction: column;
+  border: 1px solid white;
+}
+
+li img {
+  width: 160px;
 }
 
 
