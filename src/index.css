@@ -102,7 +102,7 @@ h1 {
 
 .list ul li {
   margin: 5px;
-  height: 220px;
+  height: 250px;
   border: 1px solid white;
   border-radius: 20px;
 }
@@ -115,19 +115,19 @@ h1 {
 
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 800px) {
   .list ul {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1100px) {
   .list ul {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1400px) {
   .list ul {
     grid-template-columns: repeat(4, 1fr);
   }
