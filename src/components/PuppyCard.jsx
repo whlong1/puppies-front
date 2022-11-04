@@ -33,10 +33,10 @@ const iconTable = {
 }
 
 const PuppyCard = ({ puppy }) => {
-  const avatar = iconTable[puppy.color + puppy.ears]
+  const puppyImg = iconTable[puppy.color + puppy.ears]
   return (
     <li>
-      <img src={avatar} alt="A cute puppy" />
+      <img src={puppyImg} alt="A cute puppy" />
       <h2>{puppy.name.toUpperCase()}</h2>
       <p>A {puppy.age} year old {puppy.breed}</p>
     </li>

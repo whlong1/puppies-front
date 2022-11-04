@@ -20,8 +20,8 @@ const puppyArr = [
   { color: 'White', ears: 'Bat', name: 'Rover', breed: 'Lab', age: 5 },
   { color: 'White', ears: 'Drop', name: 'Rover', breed: 'Lab', age: 5 },
   { color: 'White', ears: 'Button', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'Golden', ears: 'Bat', name: 'Rover', breed: 'Lab', age: 5 },
   { color: 'Golden', ears: 'Drop', name: 'Rover', breed: 'Lab', age: 5 },
+  { color: 'Golden', ears: 'Bat', name: 'Rover', breed: 'Lab', age: 5 },
   { color: 'Golden', ears: 'Button', name: 'Rover', breed: 'Lab', age: 5 },
 ]
 
