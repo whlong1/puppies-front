@@ -156,6 +156,22 @@ li img {
 
 
 
+/* FORM */
+input, textarea, select, button { 
+  width: 100%;
+  border: none;
+  padding: 14px;
+  font-size: 14px;
+  resize: vertical;
+  border-radius: 5px;
+  margin: 7px 0px 14px 0px;
+  border: 1px solid rgb(15, 195, 245);
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border: 1px solid rgb(0, 147, 188);;
+}
 
 
 
