@@ -35,6 +35,7 @@ const NewPuppy = () => {
         <label htmlFor="title-input">Age</label>
         <input
           required
+          min="1"
           type="number"
           name="age"
           id="age-input"
