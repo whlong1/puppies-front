@@ -79,7 +79,7 @@ nav a:first-child img {
 }
 
 img#logo {
-  width: 315px;
+  width: 324px;
 }
 
 h1,
@@ -120,6 +120,8 @@ h1 {
   margin-top: 60px;
   justify-content: flex-start;
 }
+
+
 
 ul {
   gap: 10px;
@@ -218,6 +220,14 @@ button[type="submit"] {
   background: linear-gradient(0deg, #46d7ffa6 0%, #46d7ffd9 100%);
 }
 
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 15.75vw;
+  }
+  img#logo {
+    width: 50vw;
+  }
+}
 
 @media only screen and (min-width: 800px) {
   .list ul {
