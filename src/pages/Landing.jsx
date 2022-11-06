@@ -3,9 +3,7 @@ const Landing = () => {
   return (
     <main>
       <img src={Logo} alt="A cute puppy" id="logo" />
-      <h1 id='logotype'>
-        REACT PUPPIES
-      </h1>
+      <h1> REACT PUPPIES</h1>
     </main>
   )
 }
