@@ -92,14 +92,10 @@ p {
 
 h1 {
   cursor: default;
-  /* 160 */
   font-size: 130px;
-  /* font-size: 160px; */
   font-weight: 700;
   text-align: center;
-  /* margin-bottom: 30px; */
   margin-bottom: 24px;
-
   text-shadow:
     0 1px 0 #CCCCCC,
     0 4px 0 #b9b9b9,
@@ -143,14 +139,13 @@ li {
   border-radius: 20px;
   flex-direction: column;
   justify-content: center;
-  border: 1.5px solid rgba(255, 255, 255, .2);
-
-  /* gradient: */
   background: rgb(70, 215, 255, .75);
-  background: linear-gradient(0deg, rgba(70, 215, 255, .65) 0%, rgba(70, 215, 255, .85) 100%);
-
-  /* neumorphic: */
+  border: 1.5px solid rgba(255, 255, 255, .2);
   box-shadow: 22px 22px 42px #15b0dc, -22px -22px 42px #19d7ff;
+  background:
+    linear-gradient(0deg,
+      rgba(70, 215, 255, .65) 0%,
+      rgba(70, 215, 255, .85) 100%);
 }
 
 li img {
@@ -163,28 +158,45 @@ li img {
 
 /* FORM */
 form {
-  max-width: 845px;
+  max-width: 755px;
 }
 
-input, textarea, select, button { 
+input,
+textarea,
+select,
+button {
   width: 100%;
   border: none;
   padding: 14px;
   font-size: 14px;
   resize: vertical;
   border-radius: 5px;
-  margin: 7px 0px 14px 0px;
-  border: 1px solid rgb(15, 195, 245);
-
   background: #f4f9fa;
+  margin: 7px 0px 14px 0px;
+  border: 1.5px solid #dfe6e8;
   box-shadow: inset 5px 5px 6px #e0e5e6, inset -5px -5px 6px #f8fdfe;
 }
 
-input:focus, select:focus, textarea:focus {
+label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
   outline: none;
   border: 1px solid rgb(0, 147, 188);
 }
 
+button[type="submit"] {
+  color: white;
+  box-shadow: none;
+  font-weight: 600;
+  background: rgb(70, 215, 255, .75);
+  border: 1.5px solid rgba(255, 255, 255, .6);
+  background: linear-gradient(0deg, #46d7ffa6 0%, #46d7ffd9 100%);
+}
 
 
 
