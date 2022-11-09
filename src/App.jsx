@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 
 // Components
 import Nav from './components/Nav'
@@ -11,11 +11,13 @@ import PuppyList from './pages/PuppyList'
 import * as puppyService from './services/puppyService'
 
 const App = () => {
+  const navigate = useNavigate()
   const [puppies, setPuppies] = useState([])
 
   const handleAddPuppy = async (data) => {
     const newPuppy = await puppyService.create(data)
     setPuppies([newPuppy, ...puppies])
+    navigate('/puppies')
   }
 
   const handleRemovePuppy = async (id) => {

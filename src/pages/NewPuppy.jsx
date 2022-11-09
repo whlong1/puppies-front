@@ -1,11 +1,12 @@
 import { useState } from "react"
-const NewPuppy = () => {
+
+const NewPuppy = (props) => {
   const [form, setForm] = useState({
     name: '',
     breed: '',
     age: 0,
     color: 'Grey',
-    ears: 'Folded'
+    ears: 'Drop'
   })
 
   const handleChange = ({ target }) => {
@@ -14,7 +15,7 @@ const NewPuppy = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log('Form Data', form)
+    props.handleAddPuppy(form)
   }
 
   return (
