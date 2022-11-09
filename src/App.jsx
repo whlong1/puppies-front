@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 // Components
@@ -6,6 +6,9 @@ import Nav from './components/Nav'
 import Landing from './pages/Landing'
 import NewPuppy from './pages/NewPuppy'
 import PuppyList from './pages/PuppyList'
+
+// Services
+import * as puppyService from './services/puppyService'
 
 const puppyArr = [
   { color: 'Black', ears: 'Bat', name: 'Rover', breed: 'Lab', age: 5 },
@@ -27,6 +30,14 @@ const puppyArr = [
 
 const App = () => {
   const [puppies, setPuppies] = useState(puppyArr)
+
+  useEffect(() => {
+    const fetchPuppies = async () => {
+      const data = await puppyService.index()
+      console.log(data)
+    }
+    fetchPuppies()
+  }, [])
 
   return (
     <>

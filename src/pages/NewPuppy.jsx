@@ -5,7 +5,7 @@ const NewPuppy = () => {
     breed: '',
     age: 0,
     color: 'Grey',
-    ears: 'Drop'
+    ears: 'Folded'
   })
 
   const handleChange = ({ target }) => {
@@ -79,7 +79,7 @@ const NewPuppy = () => {
           onChange={handleChange}
         >
           <option value="Drop">Drop</option>
-          <option value="Bat">Bat</option>
+          <option value="Pointy">Pointy</option>
           <option value="Button">Button</option>
         </select>
         <button type="submit">SUBMIT</button>
