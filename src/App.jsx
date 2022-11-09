@@ -10,26 +10,8 @@ import PuppyList from './pages/PuppyList'
 // Services
 import * as puppyService from './services/puppyService'
 
-const puppyArr = [
-  { color: 'Black', ears: 'Bat', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'Black', ears: 'Drop', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'Black', ears: 'Button', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'Brown', ears: 'Bat', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'Brown', ears: 'Drop', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'Brown', ears: 'Button', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'Grey', ears: 'Bat', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'Grey', ears: 'Drop', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'Grey', ears: 'Button', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'White', ears: 'Bat', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'White', ears: 'Drop', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'White', ears: 'Button', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'Golden', ears: 'Drop', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'Golden', ears: 'Bat', name: 'Rover', breed: 'Lab', age: 5 },
-  { color: 'Golden', ears: 'Button', name: 'Rover', breed: 'Lab', age: 5 },
-]
-
 const App = () => {
-  const [puppies, setPuppies] = useState(puppyArr)
+  const [puppies, setPuppies] = useState()
 
   useEffect(() => {
     const fetchPuppies = async () => {
