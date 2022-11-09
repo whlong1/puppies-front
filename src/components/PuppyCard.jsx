@@ -6,7 +6,7 @@ const PuppyCard = ({ puppy }) => {
       <section>
         <button>X</button>
       </section>
-      <PuppyIcon puppy={puppy}/>
+      <PuppyIcon puppy={puppy} />
       <h2>{puppy.name.toUpperCase()}</h2>
       <p>A {puppy.age}-year-old {puppy.breed}</p>
     </li>

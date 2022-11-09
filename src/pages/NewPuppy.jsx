@@ -3,7 +3,7 @@ const NewPuppy = () => {
   const [form, setForm] = useState({
     name: '',
     breed: '',
-    age: 1,
+    age: 0,
     color: 'Grey',
     ears: 'Drop'
   })
@@ -35,7 +35,7 @@ const NewPuppy = () => {
         <label htmlFor="title-input">Age</label>
         <input
           required
-          min="1"
+          min="0"
           type="number"
           name="age"
           id="age-input"
