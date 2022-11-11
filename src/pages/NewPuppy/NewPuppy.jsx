@@ -1,3 +1,4 @@
+import './NewPuppy.css'
 import { useState } from "react"
 
 const NewPuppy = (props) => {
@@ -20,7 +21,7 @@ const NewPuppy = (props) => {
 
   return (
     <main className="new">
-      <h1>NEW PUPPY</h1>
+      {/* <h1>NEW PUPPY</h1> */}
       <form onSubmit={handleSubmit}>
         <label htmlFor="name-input">Name</label>
         <input

@@ -4,8 +4,8 @@ import { Routes, Route, useNavigate } from 'react-router-dom'
 // Components
 import Nav from './components/Nav'
 import Landing from './pages/Landing'
-import NewPuppy from './pages/NewPuppy'
-import PuppyList from './pages/PuppyList'
+import NewPuppy from './pages/NewPuppy/NewPuppy'
+import PuppyList from './pages/PuppyList/PuppyList'
 
 // Services
 import * as puppyService from './services/puppyService'

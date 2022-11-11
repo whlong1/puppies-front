@@ -1,5 +1,6 @@
-import Loading from "./Loading"
-import PuppyCard from "../components/PuppyCard"
+import './PuppyList.css'
+import Loading from "../Loading"
+import PuppyCard from "../../components/PuppyCard"
 
 const PuppyList = (props) => {
   if (!props.puppies.length) return <Loading />
@@ -9,7 +10,11 @@ const PuppyList = (props) => {
       <h1>PUPPY LIST</h1>
       <ul>
         {props.puppies.map((puppy, idx) => (
-          <PuppyCard key={idx} puppy={puppy} handleRemovePuppy={props.handleRemovePuppy} />
+          <PuppyCard
+            key={idx}
+            puppy={puppy}
+            handleRemovePuppy={props.handleRemovePuppy}
+          />
         ))}
       </ul>
     </main>
