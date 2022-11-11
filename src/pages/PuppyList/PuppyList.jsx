@@ -1,13 +1,11 @@
 import './PuppyList.css'
-import Loading from "../Loading"
 import PuppyCard from "../../components/PuppyCard"
 
 const PuppyList = (props) => {
-  if (!props.puppies.length) return <Loading />
-
   return (
     <main className="list">
       <h1>PUPPY LIST</h1>
+      {!props.puppies.length && <h2>No Puppies</h2>}
       <ul>
         {props.puppies.map((puppy, idx) => (
           <PuppyCard
