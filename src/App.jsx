@@ -3,7 +3,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom'
 
 // Components
 import Nav from './components/Nav'
-import Landing from './pages/Landing'
+import Landing from './pages/Landing/Landing'
 import NewPuppy from './pages/NewPuppy/NewPuppy'
 import PuppyList from './pages/PuppyList/PuppyList'
 
