@@ -1,4 +1,4 @@
-import Puppy from '../assets/animations/puppy.riv'
+import Puppy from '../assets/animations/puppy-animation.riv'
 import { useRive } from '@rive-app/react-canvas'
 
 const Animation = () => {
