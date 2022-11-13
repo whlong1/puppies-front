@@ -56,6 +56,12 @@ main {
   background-color: #0ec3f6;
 }
 
+main div:has(canvas){
+  cursor: grab;
+  width: 380px !important;
+  height: 350px !important;
+}
+
 a {
   margin: 0 8px;
   color: white;
@@ -86,10 +92,6 @@ nav a:first-child img {
   width: 45px;
 }
 
-img#logo {
-  width: 324px;
-}
-
 h1,
 h2,
 h3,
@@ -116,8 +118,5 @@ h1 {
 @media only screen and (max-width: 800px) {
   h1 {
     font-size: 15.75vw;
-  }
-  img#logo {
-    width: 50vw;
   }
 }

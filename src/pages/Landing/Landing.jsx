@@ -4,13 +4,11 @@ import Animation from '../../components/Animation'
 
 const Landing = () => {
   return (
-    <>
+    <main>
       <Animation />
-      <main>
-        {/* <img src={Logo} alt="A cute puppy" id="logo" /> */}
-        <h1> REACT PUPPIES</h1>
-      </main>
-    </>
+      {/* <img src={Logo} alt="A cute puppy" id="logo" /> */}
+      <h1> REACT PUPPIES</h1>
+    </main>
   )
 }
 
