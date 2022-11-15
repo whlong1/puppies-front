@@ -30,7 +30,7 @@ const App = () => {
       const data = await puppyService.index()
       setPuppies(data)
     }
-    // fetchPuppies()
+    fetchPuppies()
   }, [])
 
   return (
