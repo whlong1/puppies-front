@@ -1,9 +1,9 @@
-import Puppy from '../assets/animations/puppy-animation.riv'
+import PuppyLogo from '../assets/animations/puppy-logo.riv'
 import { useRive, Layout, Fit, Alignment } from '@rive-app/react-canvas'
 
 const Animation = () => {
   const { RiveComponent } = useRive({
-    src: Puppy,
+    src: PuppyLogo,
     autoplay: true,
     stateMachines: "State Machine 1",
     layout: new Layout({
