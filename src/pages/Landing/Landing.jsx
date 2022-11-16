@@ -1,5 +1,3 @@
-import Logo from '../../assets/logo.svg'
-
 import Animation from '../../components/Animation'
 
 const Landing = () => {
