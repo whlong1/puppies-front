@@ -7,6 +7,7 @@ const Landing = () => {
     autoplay: true,
     stateMachines: "State Machine 1",
   })
+  
   return (
     <main>
       <RiveComponent />
