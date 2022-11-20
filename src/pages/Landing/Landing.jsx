@@ -1,4 +1,4 @@
-import PuppyLogo from '../assets/animations/puppy-logo.riv'
+import PuppyLogo from '../../assets/animations/puppy-logo.riv'
 import { useRive } from '@rive-app/react-canvas'
 
 const Landing = () => {
@@ -7,7 +7,7 @@ const Landing = () => {
     autoplay: true,
     stateMachines: "State Machine 1",
   })
-  
+
   return (
     <main>
       <RiveComponent />
