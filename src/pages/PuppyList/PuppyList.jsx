@@ -1,5 +1,6 @@
 import './PuppyList.css'
 import PuppyCard from "../../components/PuppyCard"
+import Pagination from '../../components/Pagination'
 
 const PuppyList = (props) => {
   return (
@@ -15,6 +16,7 @@ const PuppyList = (props) => {
           />
         ))}
       </ul>
+      <Pagination/>
     </main>
   )
 }
