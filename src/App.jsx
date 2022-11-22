@@ -12,6 +12,7 @@ import * as puppyService from './services/puppyService'
 
 const App = () => {
   const navigate = useNavigate()
+  const [page, setPage] = useState(0)
   const [puppies, setPuppies] = useState([])
 
   const handleAddPuppy = async (data) => {
@@ -27,7 +28,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchPuppies = async () => {
-      const data = await puppyService.index()
+      const data = await puppyService.index(page)
       setPuppies(data)
     }
     fetchPuppies()
