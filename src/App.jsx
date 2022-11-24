@@ -26,8 +26,8 @@ const App = () => {
     setPuppies(puppies.filter((p) => p._id !== removedPuppy._id))
   }
 
-  const handlePagination = () => {
-    setPage((prevPage) => prevPage + 1)
+  const handlePagination = (int) => {
+    setPage((prevPage) => prevPage + int)
   }
 
   useEffect(() => {
