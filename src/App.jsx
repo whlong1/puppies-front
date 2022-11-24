@@ -26,6 +26,10 @@ const App = () => {
     setPuppies(puppies.filter((p) => p._id !== removedPuppy._id))
   }
 
+  const handlePagination = () => {
+    setPage((prevPage) => prevPage + 1)
+  }
+
   useEffect(() => {
     const fetchPuppies = async () => {
       const data = await puppyService.index(page)
