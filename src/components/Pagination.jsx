@@ -1,4 +1,4 @@
-const Pagination = () => {
+const Pagination = ({ handlePagination }) => {
   return (
     <div></div>
   )

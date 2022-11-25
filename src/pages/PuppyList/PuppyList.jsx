@@ -16,7 +16,7 @@ const PuppyList = (props) => {
           />
         ))}
       </ul>
-      <Pagination/>
+      <Pagination handlePagination={props.handlePagination} />
     </main>
   )
 }

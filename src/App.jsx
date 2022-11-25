@@ -43,7 +43,13 @@ const App = () => {
       <Nav />
       <Routes>
         <Route path='/' element={<Landing />} />
-        <Route path='/puppies' element={<PuppyList puppies={puppies} handleRemovePuppy={handleRemovePuppy} />} />
+        <Route path='/puppies' element={
+          <PuppyList
+            puppies={puppies}
+            handlePagination={handlePagination}
+            handleRemovePuppy={handleRemovePuppy}
+          />
+        } />
         <Route path='/puppies/new' element={<NewPuppy handleAddPuppy={handleAddPuppy} />} />
       </Routes>
     </>
