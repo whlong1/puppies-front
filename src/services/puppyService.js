@@ -1,7 +1,7 @@
 const BASE_URL = `${process.env.REACT_APP_BACK_END_SERVER_URL}/api/puppies`
 
-const index = async (page) => {
-  const res = await fetch(`${BASE_URL}?page=${page}`)
+const index = async () => {
+  const res = await fetch(BASE_URL)
   return res.json()
 }
 
