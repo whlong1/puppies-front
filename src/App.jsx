@@ -10,9 +10,9 @@ import PuppyList from './pages/PuppyList/PuppyList'
 // Services
 import * as puppyService from './services/puppyService'
 
+
 const App = () => {
   const navigate = useNavigate()
-  const [page, setPage] = useState(0)
   const [puppies, setPuppies] = useState([])
 
   const handleAddPuppy = async (data) => {
@@ -26,13 +26,9 @@ const App = () => {
     setPuppies(puppies.filter((p) => p._id !== removedPuppy._id))
   }
 
-  const handlePagination = (int) => {
-    setPage((prevPage) => prevPage + int)
-  }
-
   useEffect(() => {
     const fetchPuppies = async () => {
-      const data = await puppyService.index(page)
+      const data = await puppyService.index()
       setPuppies(data)
     }
     fetchPuppies()
@@ -46,7 +42,6 @@ const App = () => {
         <Route path='/puppies' element={
           <PuppyList
             puppies={puppies}
-            handlePagination={handlePagination}
             handleRemovePuppy={handleRemovePuppy}
           />
         } />
