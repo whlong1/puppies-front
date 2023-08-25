@@ -1,6 +1,6 @@
 <img src="src/assets/landing.png"/>
 
-## puppies-front-end
+## React Puppies Front-end
 
 React Puppies is a code-along application designed to introduce students to the MERN stack, allowing users to interact with a range of cute canine-related features. Beyond its core functionalities, the application stands out with its integration of interactive Rive animations and the use of customizable SVG assets, bringing a dynamic and visually appealing user experience.
 
